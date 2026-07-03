@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PhotoGallery from "@/components/PhotoGallery";
 import { siteInfo } from "@/data/site-info";
 import { portfolio } from "@/data/portfolio";
@@ -38,16 +39,26 @@ export default function AboutPage() {
           </div>
 
           {/* Gear */}
-          <div className="bg-sand-dark rounded-2xl p-8">
-            <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">My Gear</h3>
-            <ul className="space-y-3">
-              {siteInfo.gear.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span className="text-clay text-lg mt-0.5">📷</span>
-                  <span className="text-charcoal-light leading-snug">{item}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="bg-sand-dark rounded-2xl overflow-hidden">
+            <div className="relative h-56 w-full">
+              <Image
+                src="/images/IMG_5619.jpg"
+                alt="Camera bodies and lenses side by side"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">My Gear</h3>
+              <ul className="space-y-3">
+                {siteInfo.gear.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-clay text-lg mt-0.5">📷</span>
+                    <span className="text-charcoal-light leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
