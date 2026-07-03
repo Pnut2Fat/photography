@@ -11,8 +11,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="font-heading text-xl font-bold mb-2">{siteInfo.name}</h3>
-            <p className="text-sm text-clay-light">{siteInfo.tagline}</p>
-            <p className="text-sm text-sand/70 mt-2">{siteInfo.location}</p>
+            <p className="text-sm text-sand/90">{siteInfo.tagline}</p>
+            <p className="text-sm text-sand/90 mt-2">{siteInfo.location}</p>
           </div>
 
           {/* Quick links */}

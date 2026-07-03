@@ -37,6 +37,7 @@ export default function HomePage() {
 
       {/* Perks */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <h2 className="sr-only">Why Book With Me</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {perks.map(({ icon, title, body }) => (
             <div key={title} className="text-center">
@@ -55,7 +56,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-clay text-sm font-semibold uppercase tracking-widest mb-2">Recent Work</p>
+            <p className="text-clay-dark text-sm font-semibold uppercase tracking-widest mb-2">Recent Work</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-charcoal">Portfolio</h2>
           </div>
           <Link
@@ -78,7 +79,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-clay text-sm font-semibold uppercase tracking-widest mb-2">
+              <p className="text-clay-dark text-sm font-semibold uppercase tracking-widest mb-2">
                 Getting started rates
               </p>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-charcoal">Sessions</h2>
@@ -103,7 +104,7 @@ export default function HomePage() {
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal mb-3">
           Have something specific in mind?
         </h2>
-        <p className="text-charcoal/70 mb-6 max-w-md mx-auto">
+        <p className="text-black mb-6 max-w-md mx-auto">
           I&apos;m happy to chat about what you&apos;re picturing and put a plan together.
         </p>
         <Link

@@ -37,7 +37,7 @@ export default function Navbar() {
                 href={href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === href
-                    ? "text-clay border-b-2 border-clay"
+                    ? "text-clay-dark border-b-2 border-clay-dark"
                     : "text-charcoal-light hover:text-charcoal"
                 }`}
               >
@@ -78,7 +78,7 @@ export default function Navbar() {
               href={href}
               onClick={() => setMenuOpen(false)}
               className={`text-base font-medium py-1 transition-colors ${
-                pathname === href ? "text-clay" : "text-charcoal-light hover:text-charcoal"
+                pathname === href ? "text-clay-dark" : "text-charcoal-light hover:text-charcoal"
               }`}
             >
               {label}

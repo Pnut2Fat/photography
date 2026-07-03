@@ -69,7 +69,7 @@ export default function BookingForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-1">
-            Phone <span className="text-charcoal-light/60 font-normal">(optional)</span>
+            Phone <span className="text-charcoal-light font-normal">(optional)</span>
           </label>
           <input
             id="phone"
@@ -99,7 +99,7 @@ export default function BookingForm() {
 
       <div>
         <label htmlFor="preferredDate" className="block text-sm font-medium text-charcoal mb-1">
-          Preferred Date <span className="text-charcoal-light/60 font-normal">(optional)</span>
+          Preferred Date <span className="text-charcoal-light font-normal">(optional)</span>
         </label>
         <input
           id="preferredDate"
