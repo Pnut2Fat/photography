@@ -6,10 +6,11 @@ import Image from "next/image";
 interface ClickableImageProps {
   src: string;
   alt: string;
+  fit?: "cover" | "contain";
   imageClassName?: string;
 }
 
-export default function ClickableImage({ src, alt, imageClassName = "" }: ClickableImageProps) {
+export default function ClickableImage({ src, alt, fit = "cover", imageClassName = "" }: ClickableImageProps) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function ClickableImage({ src, alt, imageClassName = "" }: Clicka
           src={src}
           alt={alt}
           fill
-          className={`object-cover hover:scale-105 transition-transform duration-300 ${imageClassName}`}
+          className={`${fit === "cover" ? "object-cover" : "object-contain"} hover:scale-105 transition-transform duration-300 ${imageClassName}`}
         />
       </button>
 

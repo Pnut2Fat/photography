@@ -40,14 +40,15 @@ export default function AboutPage() {
 
           {/* Gear */}
           <div className="bg-sand-dark rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-2 gap-1">
-              <div className="relative h-40 sm:h-56 w-full">
-                <ClickableImage src="/images/IMG_5619.jpg" alt="Camera bodies and lenses side by side" />
+            <div className="grid grid-cols-2 gap-1 bg-charcoal/5">
+              <div className="relative h-56 sm:h-72 w-full">
+                <ClickableImage src="/images/IMG_5619.jpg" alt="Camera bodies and lenses side by side" fit="contain" />
               </div>
-              <div className="relative h-40 sm:h-56 w-full">
+              <div className="relative h-56 sm:h-72 w-full">
                 <ClickableImage
                   src="/images/IMG_5613.jpg"
                   alt="Full camera kit laid out, including cameras, lenses, batteries, and an iPad"
+                  fit="contain"
                 />
               </div>
             </div>
