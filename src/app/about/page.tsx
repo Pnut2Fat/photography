@@ -15,9 +15,9 @@ export default function AboutPage() {
     <>
       {/* Header */}
       <section className="bg-moss py-14 px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sand text-sm font-semibold uppercase tracking-widest mb-3">The photographer</p>
-        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-sand mb-4">About Me</h1>
-        <p className="text-sand/80 max-w-md mx-auto">
+        <p className="text-cream text-sm font-semibold uppercase tracking-widest mb-3">The photographer</p>
+        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-cream mb-4">About Me</h1>
+        <p className="text-cream/80 max-w-md mx-auto">
           Getting started in photography, right here in Seguin, TX.
         </p>
       </section>
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
           {/* Gear */}
           <div className="bg-sand-dark rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-2 gap-1 bg-charcoal/5">
+            <div className="grid grid-cols-2 gap-1 bg-black/5">
               <div className="relative h-56 sm:h-72 w-full">
                 <ClickableImage src="/images/IMG_5619.jpg" alt="Camera bodies and lenses side by side" fit="contain" />
               </div>
@@ -94,13 +94,13 @@ export default function AboutPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/pricing"
-            className="inline-block bg-moss text-sand font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
+            className="inline-block bg-moss text-cream font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
           >
             See Pricing
           </Link>
           <Link
             href="/contact"
-            className="inline-block border-2 border-moss text-moss font-semibold px-8 py-3 rounded-full hover:bg-moss/5 transition-colors"
+            className="inline-block border-2 border-moss dark:border-moss-lighter text-moss dark:text-moss-lighter font-semibold px-8 py-3 rounded-full hover:bg-moss/5 transition-colors"
           >
             Get in Touch
           </Link>

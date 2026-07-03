@@ -40,13 +40,13 @@ export default function ClickableImage({ src, alt, fit = "cover", imageClassName
 
       {open && (
         <div
-          className="fixed inset-0 z-[100] bg-charcoal/90 flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
           onClick={() => setOpen(false)}
         >
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="absolute top-4 right-4 text-sand text-4xl leading-none hover:text-clay-light transition-colors cursor-pointer"
+            className="absolute top-4 right-4 text-cream text-4xl leading-none hover:text-clay-light transition-colors cursor-pointer"
             aria-label="Close"
           >
             &times;

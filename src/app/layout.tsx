@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -36,11 +37,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable} h-full`}>
+    <html lang="en" className={`${playfair.variable} ${lato.variable} h-full`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col antialiased">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

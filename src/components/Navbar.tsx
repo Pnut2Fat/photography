@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { siteInfo } from "@/data/site-info";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,7 +25,7 @@ export default function Navbar() {
           {/* Logo / business name */}
           <Link
             href="/"
-            className="text-xl font-heading font-bold text-moss tracking-tight hover:text-moss-light transition-colors"
+            className="text-xl font-heading font-bold text-moss dark:text-moss-light tracking-tight hover:text-moss-light transition-colors"
           >
             {siteInfo.name}
           </Link>
@@ -37,7 +38,7 @@ export default function Navbar() {
                 href={href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === href
-                    ? "text-clay-dark border-b-2 border-clay-dark"
+                    ? "text-clay-dark dark:text-clay-light border-b-2 border-clay-dark dark:border-clay-light"
                     : "text-charcoal-light hover:text-charcoal"
                 }`}
               >
@@ -46,26 +47,30 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="bg-moss text-sand text-sm font-medium px-4 py-2 rounded-full hover:bg-moss-light transition-colors"
+              className="bg-moss text-cream text-sm font-medium px-4 py-2 rounded-full hover:bg-moss-light transition-colors"
             >
               Book a Session
             </Link>
+            <ThemeToggle />
           </div>
 
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden p-2 text-charcoal"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {menuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+          {/* Mobile: theme toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              className="p-2 text-charcoal"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {menuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -78,7 +83,7 @@ export default function Navbar() {
               href={href}
               onClick={() => setMenuOpen(false)}
               className={`text-base font-medium py-1 transition-colors ${
-                pathname === href ? "text-clay-dark" : "text-charcoal-light hover:text-charcoal"
+                pathname === href ? "text-clay-dark dark:text-clay-light" : "text-charcoal-light hover:text-charcoal"
               }`}
             >
               {label}
@@ -87,7 +92,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-2 bg-moss text-sand text-sm font-medium px-4 py-2 rounded-full text-center hover:bg-moss-light transition-colors"
+            className="mt-2 bg-moss text-cream text-sm font-medium px-4 py-2 rounded-full text-center hover:bg-moss-light transition-colors"
           >
             Book a Session
           </Link>

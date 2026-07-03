@@ -22,6 +22,10 @@ export const siteInfo = {
       name: "Tamron 18-300mm lens",
       fact: "An all-in-one superzoom covering everything from wide shots to distant telephoto, handy for wildlife without swapping lenses.",
     },
+    {
+      name: "iPad",
+      fact: "Used on location for quickly reviewing and culling shots between sessions, before doing the full edit back home.",
+    },
   ],
   story: [
     "I'm Michael, a photographer based in Seguin, Texas. Most of my experience is with animals and nature, like a bug on a leaf or light through a flower petal. That's where I'm most at home with a camera.",

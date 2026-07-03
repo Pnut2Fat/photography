@@ -9,7 +9,7 @@ export default function PricingCard({ service }: PricingCardProps) {
   const hasPaymentLink = service.stripePaymentLink !== "#";
 
   return (
-    <div className="bg-white border border-sand-dark rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow p-6 gap-4">
+    <div className="bg-card border border-sand-dark rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow p-6 gap-4">
       <div className="flex-1">
         <h3 className="font-heading text-xl font-semibold text-charcoal mb-1">{service.name}</h3>
         <p className="text-charcoal-light text-sm leading-relaxed mb-3">{service.description}</p>
@@ -21,7 +21,7 @@ export default function PricingCard({ service }: PricingCardProps) {
           {service.startingPrice !== null ? (
             <>
               <span className="text-xs text-charcoal-light">Starting at</span>
-              <div className="text-2xl font-bold text-moss">${service.startingPrice}</div>
+              <div className="text-2xl font-bold text-moss dark:text-moss-light">${service.startingPrice}</div>
             </>
           ) : (
             <span className="text-sm text-charcoal-light italic">Let&apos;s talk pricing</span>
@@ -33,14 +33,14 @@ export default function PricingCard({ service }: PricingCardProps) {
             href={service.stripePaymentLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-moss text-sand text-sm font-semibold px-5 py-2 rounded-full hover:bg-moss-light transition-colors"
+            className="bg-moss text-cream text-sm font-semibold px-5 py-2 rounded-full hover:bg-moss-light transition-colors"
           >
             Book & Pay
           </a>
         ) : (
           <Link
             href="/contact"
-            className="border-2 border-moss text-moss text-sm font-semibold px-5 py-2 rounded-full hover:bg-moss/5 transition-colors"
+            className="border-2 border-moss dark:border-moss-lighter text-moss dark:text-moss-lighter text-sm font-semibold px-5 py-2 rounded-full hover:bg-moss/5 transition-colors"
           >
             Contact to Book
           </Link>

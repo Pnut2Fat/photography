@@ -13,11 +13,11 @@ export default function PricingPage() {
     <>
       {/* Page header */}
       <section className="bg-moss py-14 px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sand text-sm font-semibold uppercase tracking-widest mb-3">
+        <p className="text-cream text-sm font-semibold uppercase tracking-widest mb-3">
           Just getting started
         </p>
-        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-sand mb-4">Sessions & Pricing</h1>
-        <p className="text-sand/80 max-w-md mx-auto">
+        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-cream mb-4">Sessions & Pricing</h1>
+        <p className="text-cream/80 max-w-md mx-auto">
           Friendly starting rates while I build my portfolio in Seguin, TX. Not seeing what you want? Just ask.
         </p>
       </section>
@@ -50,7 +50,7 @@ export default function PricingPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-moss text-sand font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
+          className="inline-block bg-moss text-cream font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
         >
           Let&apos;s Talk
         </Link>

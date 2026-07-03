@@ -56,19 +56,19 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-clay-dark text-sm font-semibold uppercase tracking-widest mb-2">Recent Work</p>
+            <p className="text-clay-dark dark:text-clay-light text-sm font-semibold uppercase tracking-widest mb-2">Recent Work</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-charcoal">Portfolio</h2>
           </div>
           <Link
             href="/portfolio"
-            className="hidden sm:inline text-sm text-moss font-semibold hover:text-moss-light transition-colors"
+            className="hidden sm:inline text-sm text-moss dark:text-moss-lighter font-semibold hover:text-moss-light transition-colors"
           >
             See all →
           </Link>
         </div>
         <PhotoGallery photos={portfolio.slice(0, 6)} />
         <div className="mt-8 text-center sm:hidden">
-          <Link href="/portfolio" className="text-sm text-moss font-semibold hover:text-moss-light">
+          <Link href="/portfolio" className="text-sm text-moss dark:text-moss-lighter font-semibold hover:text-moss-light">
             See full portfolio →
           </Link>
         </div>
@@ -79,14 +79,14 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-clay-dark text-sm font-semibold uppercase tracking-widest mb-2">
+              <p className="text-clay-dark dark:text-clay-light text-sm font-semibold uppercase tracking-widest mb-2">
                 Getting started rates
               </p>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-charcoal">Sessions</h2>
             </div>
             <Link
               href="/pricing"
-              className="hidden sm:inline text-sm text-moss font-semibold hover:text-moss-light transition-colors"
+              className="hidden sm:inline text-sm text-moss dark:text-moss-lighter font-semibold hover:text-moss-light transition-colors"
             >
               See all →
             </Link>
@@ -109,7 +109,7 @@ export default function HomePage() {
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-moss text-sand font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
+          className="inline-block bg-moss text-cream font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
         >
           Get in Touch
         </Link>

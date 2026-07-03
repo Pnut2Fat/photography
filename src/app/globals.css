@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   /* Nature/macro photography palette */
@@ -7,20 +8,39 @@
   --color-clay-dark:    #93441F;
   --color-moss:         #3A5A40;
   --color-moss-light:   #588157;
+  /* Brighter than moss-light; needed for small/normal-weight text and UI
+     borders in dark mode, where moss-light alone doesn't clear 4.5:1. */
+  --color-moss-lighter: #7CB380;
   --color-sand:         #FAF6EE;
   --color-sand-dark:    #F0E8D6;
   --color-charcoal:     #2B2B26;
   --color-charcoal-light: #5C5B52;
+
+  /* Fixed light color for text/accents on dark surfaces (moss/clay sections,
+     photo overlays) - intentionally does NOT change between light/dark mode. */
+  --color-cream:        #FAF6EE;
+
+  /* Elevated surface for cards and inputs, distinct from the page background. */
+  --color-card:         #FFFFFF;
 
   /* Fonts */
   --font-heading: var(--font-playfair);
   --font-body:    var(--font-lato);
 }
 
+.dark {
+  --color-sand:           #1E1C18;
+  --color-sand-dark:      #29261F;
+  --color-charcoal:       #F3EEE3;
+  --color-charcoal-light: #B9B3A6;
+  --color-card:           #322E27;
+}
+
 body {
-  background-color: #FAF6EE;
-  color: #2B2B26;
+  background-color: var(--color-sand);
+  color: var(--color-charcoal);
   font-family: var(--font-lato), Georgia, serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1, h2, h3, h4 {
