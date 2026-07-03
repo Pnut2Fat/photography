@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 
 const perks = [
   {
-    icon: "📸",
-    title: "Just Getting Started",
-    body: "I'm new to this, which means friendly rates while I build my portfolio — a great time to book.",
+    icon: "🐾",
+    title: "Animal & Nature Specialty",
+    body: "Pets, farm animals, bugs, flowers — the subjects I know best and love shooting most.",
   },
   {
-    icon: "🌱",
-    title: "Whatever You Need",
-    body: "Portraits, families, pets, events, or something totally different — tell me what you're picturing.",
+    icon: "📸",
+    title: "New to Portraits, Great Rates",
+    body: "Just starting to take on people/event sessions too, so those are priced low while I build experience.",
   },
   {
     icon: "📍",

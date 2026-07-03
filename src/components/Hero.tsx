@@ -23,12 +23,13 @@ export default function Hero() {
             {siteInfo.location}
           </p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-sand leading-tight mb-6">
-            Photography
+            Pets, Nature &
             <br />
-            <span className="text-clay">Worth Remembering.</span>
+            <span className="text-clay">the Little Details.</span>
           </h1>
           <p className="text-sand/80 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
-            {siteInfo.tagline}. Portraits, families, pets, events — or anything else you have in mind.
+            {siteInfo.tagline}. Animal and nature/macro photography is my specialty — and I'm now
+            taking portraits, families, and events too, at friendly starting rates.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

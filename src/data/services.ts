@@ -19,19 +19,27 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: "mini-session",
-    name: "Mini Session",
-    description: "A short, simple session at one location — great for a quick portrait, a pet, or a small gift idea.",
+    id: "pet-animal-session",
+    name: "Pet & Animal Session",
+    description: "My specialty — a relaxed shoot with your pets, farm animals, or critters, wherever they're most comfortable.",
     startingPrice: 25,
-    duration: "~30 minutes, one location",
+    duration: "~30-45 minutes, one location",
     stripePaymentLink: "#",
   },
   {
-    id: "standard-session",
-    name: "Standard Session",
-    description: "A full session with a few different looks or spots — good for families, couples, or personal portraits.",
-    startingPrice: 60,
-    duration: "~1 hour, multiple setups",
+    id: "nature-macro-session",
+    name: "Nature & Macro Session",
+    description: "Close-up, detail-focused shots — flowers, bugs, textures, whatever catches the light.",
+    startingPrice: 25,
+    duration: "~30-45 minutes",
+    stripePaymentLink: "#",
+  },
+  {
+    id: "portrait-session",
+    name: "Portrait Session",
+    description: "New to portraits, so I'm keeping the rate low while I build experience — a great time to be one of my first clients.",
+    startingPrice: 30,
+    duration: "~45 minutes, one location",
     stripePaymentLink: "#",
   },
   {
