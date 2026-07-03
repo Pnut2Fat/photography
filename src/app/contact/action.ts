@@ -40,7 +40,7 @@ export async function sendBookingRequest(
     from: "Michael's Lens Photography <onboarding@resend.dev>",
     to: ["peenut1107@gmail.com"],
     replyTo: email,
-    subject: `[Michael's Lens Photography] ${sessionType || "New booking request"} — from ${name}`,
+    subject: `[Michael's Lens Photography] ${sessionType || "New booking request"} from ${name}`,
     text: [
       `Name: ${name}`,
       `Email: ${email}`,

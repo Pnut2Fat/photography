@@ -17,7 +17,7 @@ export default function ContactPage() {
           Book a Session
         </h1>
         <p className="text-sand/80 max-w-md mx-auto">
-          Tell me what you&apos;re picturing — portraits, family, pets, or something else entirely.
+          Tell me what you&apos;re picturing: portraits, family, pets, or something else entirely.
         </p>
       </section>
 

@@ -5,7 +5,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Session pricing for photography in Seguin, TX — pet & animal sessions, portrait sessions, and custom requests.",
+  description: "Session pricing for pet & animal sessions, portrait sessions, and custom requests in Seguin, TX.",
 };
 
 export default function PricingPage() {
@@ -46,7 +46,7 @@ export default function PricingPage() {
           Not sure what you need yet?
         </h2>
         <p className="text-charcoal-light mb-6 max-w-md mx-auto">
-          That&apos;s totally fine — tell me what you have in mind and we&apos;ll figure out a plan and price together.
+          That&apos;s totally fine. Tell me what you have in mind and we&apos;ll figure out a plan and price together.
         </p>
         <Link
           href="/contact"

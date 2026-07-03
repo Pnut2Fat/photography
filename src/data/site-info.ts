@@ -1,5 +1,5 @@
 export const siteInfo = {
-  // Change the business name here any time — it's used everywhere on the site.
+  // Change the business name here any time. It's used everywhere on the site.
   name: "Michael's Lens Photography",
   tagline: "Affordable photography in Seguin, TX",
   phone: "(210) 919-7121",

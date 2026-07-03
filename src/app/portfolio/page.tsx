@@ -5,7 +5,7 @@ import { portfolio } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "A look at recent photography work — nature, animals, and more, based in Seguin, TX.",
+  description: "A look at recent photography work in Seguin, TX, including nature and animals.",
 };
 
 export default function PortfolioPage() {
@@ -18,7 +18,7 @@ export default function PortfolioPage() {
         <p className="text-sand text-sm font-semibold uppercase tracking-widest mb-3">A look at the work</p>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-sand mb-4">Portfolio</h1>
         <p className="text-sand/80 max-w-md mx-auto">
-          Still building this up — more photos (and more categories) coming soon.
+          Still building this up. More photos (and more categories) coming soon.
         </p>
       </section>
 

@@ -7,7 +7,7 @@ import { portfolio } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Learn about ${siteInfo.name} — a photographer based in Seguin, TX just getting started.`,
+  description: `Learn about ${siteInfo.name}, a photographer based in Seguin, TX just getting started.`,
 };
 
 export default function AboutPage() {

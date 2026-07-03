@@ -16,7 +16,7 @@ const perks = [
   {
     icon: "🐾",
     title: "Animal & Nature Specialty",
-    body: "Pets, farm animals, bugs, flowers — the subjects I know best and love shooting most.",
+    body: "Pets, farm animals, bugs, and flowers: the subjects I know best and love shooting most.",
   },
   {
     icon: "📸",
