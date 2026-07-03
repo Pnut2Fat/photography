@@ -37,10 +37,10 @@ export async function sendBookingRequest(
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: "Mike's Lens Photography <onboarding@resend.dev>",
+    from: "Michael's Lens Photography <onboarding@resend.dev>",
     to: ["peenut1107@gmail.com"],
     replyTo: email,
-    subject: `[Mike's Lens Photography] ${sessionType || "New booking request"} — from ${name}`,
+    subject: `[Michael's Lens Photography] ${sessionType || "New booking request"} — from ${name}`,
     text: [
       `Name: ${name}`,
       `Email: ${email}`,

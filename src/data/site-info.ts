@@ -1,6 +1,6 @@
 export const siteInfo = {
   // Change the business name here any time — it's used everywhere on the site.
-  name: "Mike's Lens Photography",
+  name: "Michael's Lens Photography",
   tagline: "Affordable photography in Seguin, TX",
   phone: "(210) 919-7121",
   email: "peenut1107@gmail.com",
@@ -24,7 +24,7 @@ export const siteInfo = {
     },
   ],
   story: [
-    "I'm Mike, a photographer based in Seguin, Texas. Most of my experience is with animals and nature, like a bug on a leaf or light through a flower petal. That's where I'm most at home with a camera.",
+    "I'm Michael, a photographer based in Seguin, Texas. Most of my experience is with animals and nature, like a bug on a leaf or light through a flower petal. That's where I'm most at home with a camera.",
     "I'm now starting to take on portraits, families, and events too. Since that side is newer for me, I'm keeping those rates especially friendly while I build up experience. It's a great time to be one of my first clients.",
   ],
   socialLinks: {

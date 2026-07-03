@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import PhotoGallery from "@/components/PhotoGallery";
+import ClickableImage from "@/components/ClickableImage";
 import { siteInfo } from "@/data/site-info";
 import { portfolio } from "@/data/portfolio";
 
@@ -42,19 +42,12 @@ export default function AboutPage() {
           <div className="bg-sand-dark rounded-2xl overflow-hidden">
             <div className="grid grid-cols-2 gap-1">
               <div className="relative h-40 sm:h-56 w-full">
-                <Image
-                  src="/images/IMG_5619.jpg"
-                  alt="Camera bodies and lenses side by side"
-                  fill
-                  className="object-cover"
-                />
+                <ClickableImage src="/images/IMG_5619.jpg" alt="Camera bodies and lenses side by side" />
               </div>
               <div className="relative h-40 sm:h-56 w-full">
-                <Image
+                <ClickableImage
                   src="/images/IMG_5613.jpg"
                   alt="Full camera kit laid out, including cameras, lenses, batteries, and an iPad"
-                  fill
-                  className="object-cover"
                 />
               </div>
             </div>
@@ -83,8 +76,7 @@ export default function AboutPage() {
             A Few Favorites
           </h2>
           <p className="text-charcoal-light text-center mb-10 text-sm">
-            Add your own photos to <code className="bg-sand px-1 rounded">public/images/</code> and
-            list them in <code className="bg-sand px-1 rounded">src/data/portfolio.ts</code>.
+            Click any photo for a closer look.
           </p>
           <PhotoGallery photos={portfolio.slice(0, 6)} />
         </div>
