@@ -40,21 +40,34 @@ export default function AboutPage() {
 
           {/* Gear */}
           <div className="bg-sand-dark rounded-2xl overflow-hidden">
-            <div className="relative h-56 w-full">
-              <Image
-                src="/images/IMG_5619.jpg"
-                alt="Camera bodies and lenses side by side"
-                fill
-                className="object-cover"
-              />
+            <div className="grid grid-cols-2 gap-1">
+              <div className="relative h-40 sm:h-56 w-full">
+                <Image
+                  src="/images/IMG_5619.jpg"
+                  alt="Camera bodies and lenses side by side"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-40 sm:h-56 w-full">
+                <Image
+                  src="/images/IMG_5613.jpg"
+                  alt="Full camera kit laid out, including cameras, lenses, batteries, and an iPad"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="p-8">
               <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">My Gear</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {siteInfo.gear.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                  <li key={item.name} className="flex items-start gap-3">
                     <span className="text-clay text-lg mt-0.5">📷</span>
-                    <span className="text-charcoal-light leading-snug">{item}</span>
+                    <div>
+                      <p className="text-charcoal font-medium leading-snug">{item.name}</p>
+                      <p className="text-charcoal-light text-sm leading-snug mt-0.5">{item.fact}</p>
+                    </div>
                   </li>
                 ))}
               </ul>

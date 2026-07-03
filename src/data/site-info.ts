@@ -6,9 +6,22 @@ export const siteInfo = {
   email: "peenut1107@gmail.com",
   location: "Seguin, TX",
   gear: [
-    "Sony a6000",
-    "Sony 18-105mm lens",
-    "Tamron 18-300mm lens",
+    {
+      name: "Sony a6000",
+      fact: "Released in 2014, it was the fastest-focusing APS-C camera in the world at the time, with 179 autofocus points.",
+    },
+    {
+      name: "Sony NEX-7",
+      fact: "One of Sony's earliest mirrorless cameras (2011), known for its dual control dials and, for its time, a very high-resolution 24MP sensor.",
+    },
+    {
+      name: "Sony 18-105mm f/4 lens",
+      fact: "A versatile power-zoom lens built with video in mind, with smooth, motorized zooming and built-in image stabilization.",
+    },
+    {
+      name: "Tamron 18-300mm lens",
+      fact: "An all-in-one superzoom covering everything from wide shots to distant telephoto, handy for wildlife without swapping lenses.",
+    },
   ],
   story: [
     "I'm Mike, a photographer based in Seguin, Texas. Most of my experience is with animals and nature, like a bug on a leaf or light through a flower petal. That's where I'm most at home with a camera.",
