@@ -8,8 +8,8 @@ export default function Hero() {
       {/* Background photo */}
       <div className="absolute inset-0">
         <Image
-          src="/images/IMG_4034.jpg"
-          alt="A close-up nature photo"
+          src="/images/_DSC1692.JPG"
+          alt="Rooster silhouetted at sunset"
           fill
           className="object-cover object-center opacity-40"
           priority

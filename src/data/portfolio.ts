@@ -13,13 +13,24 @@ export interface PortfolioPhoto {
 // -----------------------------------------------------------------------
 
 export const portfolio: PortfolioPhoto[] = [
-  // Placeholder photos below are borrowed from an earlier project of Mike's
-  // (the family's egg farm) just so the gallery isn't empty. Swap these out
-  // for real nature/macro and portrait shots whenever you're ready.
-  { src: "/images/IDG_20251213_113405_920.JPG", alt: "The flock roaming outside", category: "Farm & Animals" },
-  { src: "/images/IMG_2497.JPG", alt: "Hen with her chicks", category: "Farm & Animals" },
-  { src: "/images/IMG_6670.JPG", alt: "Chickens in the yard", category: "Farm & Animals" },
-  { src: "/images/IMG_8342.jpg", alt: "Baby chicks", category: "Farm & Animals" },
-  { src: "/images/IMG_9462.jpg", alt: "Holding a chicken", category: "Farm & Animals" },
-  { src: "/images/IMG_4034.jpg", alt: "Close-up detail shot", category: "Nature & Macro" },
+  // Animals & Wildlife
+  { src: "/images/_DSC1692.JPG", alt: "Rooster silhouetted at sunset", category: "Animals & Wildlife" },
+  { src: "/images/DSC03251.JPG", alt: "Cat mid-yawn", category: "Animals & Wildlife" },
+  { src: "/images/DSC04351.JPG", alt: "Macaws perched together", category: "Animals & Wildlife" },
+  { src: "/images/DSC04531.JPG", alt: "Giraffe and zebra", category: "Animals & Wildlife" },
+  { src: "/images/DSC04445.JPG", alt: "Mallard ducks swimming", category: "Animals & Wildlife" },
+  { src: "/images/DSC04634.JPG", alt: "Bird perched in the branches", category: "Animals & Wildlife" },
+  { src: "/images/DSC05683.JPG", alt: "Cardinal on a branch", category: "Animals & Wildlife" },
+  { src: "/images/DSC05232.JPG", alt: "Hawk silhouette at dusk", category: "Animals & Wildlife" },
+  { src: "/images/DSC03982.JPG", alt: "Bird against a stormy sky", category: "Animals & Wildlife" },
+
+  // Nature & Macro
+  { src: "/images/DSC04136.JPG", alt: "Rose with water droplets", category: "Nature & Macro" },
+  { src: "/images/DSC04986.JPG", alt: "Backlit pink rose", category: "Nature & Macro" },
+  { src: "/images/DSC03606.JPG", alt: "Bee on a cactus flower", category: "Nature & Macro" },
+  { src: "/images/DSC04805.JPG", alt: "Bee on a yellow wildflower", category: "Nature & Macro" },
+  { src: "/images/DSC05378.JPG", alt: "Insect on a backlit leaf", category: "Nature & Macro" },
+  { src: "/images/DSC05736.JPG", alt: "Swallowtail butterfly on a thistle", category: "Nature & Macro" },
+  { src: "/images/DSC05770.JPG", alt: "Insect on a thistle bud", category: "Nature & Macro" },
+  { src: "/images/DSC05979.JPG", alt: "Crepe myrtle blossoms", category: "Nature & Macro" },
 ];
