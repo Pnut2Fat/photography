@@ -1,0 +1,94 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import PhotoGallery from "@/components/PhotoGallery";
+import { siteInfo } from "@/data/site-info";
+import { portfolio } from "@/data/portfolio";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: `Learn about ${siteInfo.name} — a photographer based in Seguin, TX just getting started.`,
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      {/* Header */}
+      <section className="bg-moss py-14 px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-sand text-sm font-semibold uppercase tracking-widest mb-3">The photographer</p>
+        <h1 className="font-heading text-4xl sm:text-5xl font-bold text-sand mb-4">About Me</h1>
+        <p className="text-sand/80 max-w-md mx-auto">
+          Getting started in photography, right here in Seguin, TX.
+        </p>
+      </section>
+
+      {/* Story */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal mb-6">
+              My Story
+            </h2>
+            <div className="space-y-4">
+              {siteInfo.story.map((paragraph, i) => (
+                <p key={i} className="text-charcoal-light leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+
+          {/* Gear */}
+          <div className="bg-sand-dark rounded-2xl p-8">
+            <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">My Gear</h3>
+            <ul className="space-y-3">
+              {siteInfo.gear.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="text-clay text-lg mt-0.5">📷</span>
+                  <span className="text-charcoal-light leading-snug">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo gallery */}
+      <section className="bg-sand-dark py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal mb-2 text-center">
+            A Few Favorites
+          </h2>
+          <p className="text-charcoal-light text-center mb-10 text-sm">
+            Add your own photos to <code className="bg-sand px-1 rounded">public/images/</code> and
+            list them in <code className="bg-sand px-1 rounded">src/data/portfolio.ts</code>.
+          </p>
+          <PhotoGallery photos={portfolio.slice(0, 6)} />
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="font-heading text-2xl font-bold text-charcoal mb-3">
+          Ready to book a session?
+        </h2>
+        <p className="text-charcoal-light mb-6">
+          See pricing or reach out to talk through what you have in mind.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/pricing"
+            className="inline-block bg-moss text-sand font-semibold px-8 py-3 rounded-full hover:bg-moss-light transition-colors"
+          >
+            See Pricing
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-block border-2 border-moss text-moss font-semibold px-8 py-3 rounded-full hover:bg-moss/5 transition-colors"
+          >
+            Get in Touch
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

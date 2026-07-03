@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* Nature/macro photography palette */
+  --color-clay:         #C1663A;
+  --color-clay-light:   #DD9770;
+  --color-clay-dark:    #93441F;
+  --color-moss:         #3A5A40;
+  --color-moss-light:   #588157;
+  --color-sand:         #FAF6EE;
+  --color-sand-dark:    #F0E8D6;
+  --color-charcoal:     #2B2B26;
+  --color-charcoal-light: #5C5B52;
+
+  /* Fonts */
+  --font-heading: var(--font-playfair);
+  --font-body:    var(--font-lato);
+}
+
+body {
+  background-color: #FAF6EE;
+  color: #2B2B26;
+  font-family: var(--font-lato), Georgia, serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
