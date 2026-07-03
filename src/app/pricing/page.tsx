@@ -5,7 +5,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Session pricing for photography in Seguin, TX — mini sessions, standard sessions, event coverage, and custom requests.",
+  description: "Session pricing for photography in Seguin, TX — pet & animal sessions, portrait sessions, and custom requests.",
 };
 
 export default function PricingPage() {

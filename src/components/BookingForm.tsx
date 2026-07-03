@@ -10,7 +10,6 @@ const sessionTypes = [
   "Family",
   "Pets / Animals",
   "Nature / Product",
-  "Event",
   "Not sure yet",
 ];
 

@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
           <p className="text-sand/80 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
             {siteInfo.tagline}. Animal and nature/macro photography is my specialty — and I'm now
-            taking portraits, families, and events too, at friendly starting rates.
+            taking portraits and families too, at friendly starting rates.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

@@ -9,7 +9,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: `${siteInfo.name} | Photography in Seguin, TX`,
-  description: `${siteInfo.tagline}. Portraits, families, pets, events, and more.`,
+  description: `${siteInfo.tagline}. Portraits, families, pets, and nature/macro photography.`,
 };
 
 const perks = [
@@ -21,7 +21,7 @@ const perks = [
   {
     icon: "📸",
     title: "New to Portraits, Great Rates",
-    body: "Just starting to take on people/event sessions too, so those are priced low while I build experience.",
+    body: "Just starting to take on portrait and family sessions too, so those are priced low while I build experience.",
   },
   {
     icon: "📍",

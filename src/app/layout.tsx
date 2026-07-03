@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     default: `${siteInfo.name} | Photography in Seguin, TX`,
     template: `%s | ${siteInfo.name}`,
   },
-  description: `${siteInfo.tagline}. Portraits, families, pets, events, and more.`,
+  description: `${siteInfo.tagline}. Portraits, families, pets, and nature/macro photography.`,
   openGraph: {
     siteName: siteInfo.name,
     type: "website",
