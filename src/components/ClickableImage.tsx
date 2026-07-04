@@ -51,12 +51,13 @@ export default function ClickableImage({ src, alt, fit = "cover", imageClassName
           >
             &times;
           </button>
-          <div
-            className="relative w-full h-full max-w-5xl max-h-[85vh]"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
             onClick={(e) => e.stopPropagation()}
-          >
-            <Image src={src} alt={alt} fill sizes="100vw" className="object-contain" />
-          </div>
+            className="max-w-[90vw] max-h-[85vh] object-contain rounded cursor-default"
+          />
         </div>
       )}
     </>
