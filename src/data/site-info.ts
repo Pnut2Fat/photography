@@ -1,6 +1,6 @@
 export const siteInfo = {
   // Change the business name here any time. It's used everywhere on the site.
-  name: "Michael's Lens Photography",
+  name: "Shots by Michael",
   tagline: "Affordable photography in Seguin, TX",
   phone: "(210) 919-7121",
   email: "peenut1107@gmail.com",

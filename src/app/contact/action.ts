@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { siteInfo } from "@/data/site-info";
 
 export interface BookingFormState {
   success: boolean;
@@ -37,10 +38,10 @@ export async function sendBookingRequest(
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: "Michael's Lens Photography <onboarding@resend.dev>",
+    from: `${siteInfo.name} <onboarding@resend.dev>`,
     to: ["peenut1107@gmail.com"],
     replyTo: email,
-    subject: `[Michael's Lens Photography] ${sessionType || "New booking request"} from ${name}`,
+    subject: `[${siteInfo.name}] ${sessionType || "New booking request"} from ${name}`,
     text: [
       `Name: ${name}`,
       `Email: ${email}`,
